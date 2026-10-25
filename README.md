@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Emulate SSH · HTTP · FTP · Telnet · SMTP · MySQL
+
+OTrap is a honeypot and deception toolkit that stands up decoy services to detect and log attacker interaction. It emulates common service banners, records connection metadata and payloads, and alerts on suspicious activity. It is intended for authorized defensive deployment on infrastructure you control.
 
 ---
 
 ## ✨ Features
 
-- Multi-protocol honeypot — SSH, HTTP, FTP, Telnet and custom listeners
+
+- Decoy service emulation with realistic banners for common ports
+- Connection logging with source, timing and payload metadata
+- Alerting on interaction with the deception services
+- Configurable listening ports and service profiles
+- Structured log/export output for SIEM ingestion
+- Offline --self-test for safe verification
 
 ---
 
@@ -37,8 +44,11 @@ Emulate SSH · HTTP · FTP · Telnet · SMTP · MySQL
 
 ## 🚀 Usage
 
+
 ```bash
 ./OTrap
+./OTrap --self-test
+./OTrap --help
 ```
 
 ---
